@@ -23,6 +23,20 @@
 <body>
 	<header>
 		<h1>Bookstore</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<form action="#" method="post" class="login-form">
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password">
+				<button type="submit">Log In</button>
+			</form>
+		</nav>
 	</header>
 
 	<div class="book-grid">
@@ -68,18 +82,6 @@
 	</div>
 
 	<footer> © Copyright 2023 </footer>
-	<div class="login-form">
-		<h2>Login</h2>
-		<form>
-			<label for="username">Username:</label>
-			<input type="text" id="username" name="username" required>
-
-			<label for="password">Password:</label>
-			<input type="password" id="password" name="password" required>
-
-			<button type="submit">Submit</button>
-		</form>
-	</div>
 </body>
 
 </html>
