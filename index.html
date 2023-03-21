@@ -4,17 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Bookstore</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -22,21 +12,19 @@
 
 <body>
 	<header>
-		<h1>Bookstore</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<form action="#" method="post" class="login-form">
-				<label for="username">Username:</label>
-				<input type="text" id="username" name="username">
-				<label for="password">Password:</label>
-				<input type="password" id="password" name="password">
-				<button type="submit">Log In</button>
-			</form>
-		</nav>
+		<div class="topnav">
+			<a class="bookstore">Bookstore</a>
+			<a class="active">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<div class="login-container">
+				<form action="/sale.php">
+					<input type="text" placeholder="Username" name="username">
+					<input type="text" placeholder="Password" name="psw">
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		</div>
 	</header>
 
 	<div class="book-grid">
