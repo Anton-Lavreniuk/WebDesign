@@ -167,6 +167,10 @@ img {
 
 .contact {
   white-space: pre-wrap;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-stretch: expanded;
 }
 
 .category-name {

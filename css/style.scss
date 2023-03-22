@@ -158,6 +158,7 @@ img {
 }
 .contact{
   white-space: pre-wrap;
+  @include small-font(20px);
 }
 .category-name{
   text-align: center;
