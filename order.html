@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Order</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="topnav">
+			<a class="bookstore">Bookstore</a>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<a class="active">Cart</a>
+			<div class="login-container">
+				<form action="/login.php">
+					<input type="text" placeholder="Username" name="username">
+					<input type="text" placeholder="Password" name="psw">
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		</div>
+	</header>
+		<main>
+			<table>
+				<thead>
+				<tr>
+					<th>Item Name</th>
+					<th>Quantity</th>
+					<th>Price</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Item 1</td>
+					<td>2</td>
+					<td>$10.00</td>
+				</tr>
+				<tr>
+					<td>Item 2</td>
+					<td>1</td>
+					<td>$5.00</td>
+				</tr>
+				<!-- end loop -->
+				<tr>
+					<td colspan="2">Subtotal</td>
+					<td>$25.00</td>
+				</tr>
+				<tr>
+					<td colspan="2">Shipping</td>
+					<td>$5.00</td>
+				</tr>
+				<tr>
+					<td colspan="2">Total</td>
+					<td>$30.00</td>
+				</tr>
+				</tbody>
+			</table>
+			<form class="order-form">
+				<fieldset>
+					<legend>Enter Your Information</legend>
+					<label>
+						Name:
+						<input type="text" name="name" required>
+					</label>
+					<label>
+						Email:
+						<input type="text" name="email" required>
+					</label>
+					<label>
+						Address:
+						<input type="text" name="address" required>
+					</label>
+					<button class="add-to-cart-btn">Order</button>
+				</fieldset>
+			</form>
+		</main>
+	<footer> © Copyright 2023 </footer>
+</body>
+</html>
